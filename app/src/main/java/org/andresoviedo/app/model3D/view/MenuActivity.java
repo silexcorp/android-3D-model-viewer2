@@ -64,7 +64,7 @@ public class MenuActivity extends ListActivity {
                 getResources().getStringArray(R.array.menu_items)));
     }
 
-    @Override
+    /*@Override
     public void onListItemClick(ListView l, View v, int position, long id) {
         String selectedItem = (String) getListView().getItemAtPosition(position);
         // Toast.makeText(getApplicationContext(), "Click ListItem '" + selectedItem + "'", Toast.LENGTH_LONG).show();
@@ -115,7 +115,7 @@ public class MenuActivity extends ListActivity {
             Toast.makeText(getApplicationContext(), ex.getMessage(), Toast.LENGTH_LONG).show();
         }
 
-    }
+    }*/
 
     private void loadModel() {
         ContentUtils.showListDialog(this, "File Provider", new String[]{"Samples", "Repository",
@@ -223,7 +223,7 @@ public class MenuActivity extends ListActivity {
         }
     }
 
-    @Override
+   /* @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         ContentUtils.setThreadActivity(this);
         try {
@@ -320,7 +320,7 @@ public class MenuActivity extends ListActivity {
             Log.e("MenuActivity", ex.getMessage(), ex);
             Toast.makeText(this, "Unexpected exception: " + ex.getMessage(), Toast.LENGTH_LONG).show();
         }
-    }
+    }*/
 
     private void onLoadModel(Uri uri) throws IOException {
 

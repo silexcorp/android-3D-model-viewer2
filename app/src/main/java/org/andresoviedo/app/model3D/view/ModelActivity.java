@@ -4,7 +4,6 @@ import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
-import android.content.Loader;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -22,7 +21,6 @@ import org.andresoviedo.android_3d_model_engine.services.LoaderTask;
 import org.andresoviedo.android_3d_model_engine.services.SceneLoader;
 import org.andresoviedo.android_3d_model_engine.view.ModelRenderer;
 import org.andresoviedo.android_3d_model_engine.view.ModelSurfaceView;
-import org.andresoviedo.app.model3D.demo.DemoLoaderTask;
 import org.andresoviedo.dddmodel2.R;
 import org.andresoviedo.util.android.ContentUtils;
 import org.andresoviedo.util.event.EventListener;
@@ -102,10 +100,7 @@ public class ModelActivity extends Activity implements EventListener {
         // Create our 3D scenario
         Log.i("ModelActivity","Loading Scene...");
         scene = new SceneLoader(this, paramUri, paramType, gLView);
-        if (paramUri == null) {
-            final LoaderTask task = new DemoLoaderTask(this, null, scene);
-            task.execute();
-        }
+
 
 /*        Log.i("ModelActivity","Loading Scene...");
         if (paramUri == null) {
@@ -170,7 +165,7 @@ public class ModelActivity extends Activity implements EventListener {
         // Show the Up button in the action bar.
         setupActionBar();
 
-        setupOnSystemVisibilityChangeListener();
+        //setupOnSystemVisibilityChangeListener();
 
         // load model
         scene.init();
@@ -221,42 +216,13 @@ public class ModelActivity extends Activity implements EventListener {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.model_toggle_wireframe:
-                scene.toggleWireframe();
-                break;
-            case R.id.model_toggle_boundingbox:
-                scene.toggleBoundingBox();
-                break;
-            case R.id.model_toggle_textures:
-                scene.toggleTextures();
-                break;
-            case R.id.model_toggle_animation:
-                scene.toggleAnimation();
-                break;
-            case R.id.model_toggle_collision:
-                scene.toggleCollision();
-                break;
+
+
             case R.id.model_toggle_lights:
                 scene.toggleLighting();
                 break;
-            case R.id.model_toggle_stereoscopic:
-                scene.toggleStereoscopic();
-                break;
-            case R.id.model_toggle_blending:
-                scene.toggleBlending();
-                break;
-            case R.id.model_toggle_immersive:
-                toggleImmersive();
-                break;
-            case R.id.model_load_texture:
-                Intent target = ContentUtils.createGetContentIntent("image/*");
-                Intent intent = Intent.createChooser(target, "Select a file");
-                try {
-                    startActivityForResult(intent, REQUEST_CODE_LOAD_TEXTURE);
-                } catch (ActivityNotFoundException e) {
-                    // The reason for the existence of aFileChooser
-                }
-                break;
+
+
         }
 
         hideSystemUIDelayed();

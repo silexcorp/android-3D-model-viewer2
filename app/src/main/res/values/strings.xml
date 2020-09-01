@@ -14,12 +14,7 @@
 
     <string-array name="menu_items">
         <item>Load Model</item>
-        <!--<item>Models</item>-->
-        <item>Demo</item>
-        <item>Help</item>
-        <item>About</item>
-        <!--<item>GitHub</item>-->
-        <item>Exit</item>
+
     </string-array>
 
     <string name="image">image</string>

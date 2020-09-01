@@ -1,0 +1,85 @@
+# MTL written from D:\Works\3Dcharacters\Human\���M�p\Human_body_0826\HumanBody.obj
+newmtl body
+Kd 0.535443 0.535443 0.535443
+Ns 256
+d 1
+illum 2
+Ka 0 0 0
+Ks 0.1 0.1 0.1
+newmtl body_line
+Kd 0.0343839 0.169039 0.254834
+Ns 256
+d 1
+illum 2
+Ka 0 0 0
+Ks 0.03 0.03 0.03
+newmtl daitaibu_0451
+Kd 0.703698 0.0295116 0.150257
+Ns 256
+d 1
+illum 2
+Ka 0 0 0
+Ks 0.1 0.1 0.1
+newmtl daitaibu_0452
+Kd 0.703698 0.0295116 0.150257
+Ns 256
+d 1
+illum 2
+Ka 0 0 0
+Ks 0.1 0.1 0.1
+newmtl fukubu
+Kd 0.8 0.236911 0.0169752
+Ns 256
+d 1
+illum 2
+Ka 0 0 0
+Ks 0.1 0.1 0.1
+newmtl haibu
+Kd 0.703698 0.0295116 0.150257
+Ns 256
+d 1
+illum 2
+Ka 0 0 0
+Ks 0.1 0.1 0.1
+newmtl jyouwannitoukin
+Kd 0.730479 0.584369 0.00351316
+Ns 256
+d 1
+illum 2
+Ka 0 0 0
+Ks 0.1 0.1 0.1
+newmtl jyouwansantoukin
+Kd 0.0343839 0.169039 0.254834
+Ns 256
+d 1
+illum 2
+Ka 0 0 0
+Ks 0.1 0.1 0.1
+newmtl kataibu
+Kd 0.8 0.236911 0.0169752
+Ns 256
+d 1
+illum 2
+Ka 0 0 0
+Ks 0.1 0.1 0.1
+newmtl keibu
+Kd 0.8 0.236911 0.0169752
+Ns 256
+d 1
+illum 2
+Ka 0 0 0
+Ks 0.1 0.1 0.1
+newmtl kyoubu
+Kd 0.8 0.236911 0.0169752
+Ns 256
+d 1
+illum 2
+Ka 0 0 0
+Ks 0.1 0.1 0.1
+newmtl zenwanbu
+Kd 0.8 0.236911 0.0169752
+Ns 256
+d 1
+illum 2
+Ka 0 0 0
+Ks 0.1 0.1 0.1
